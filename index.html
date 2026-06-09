@@ -1,216 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Sujitha Pathapati | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
-
 <body>
 
-    <nav>
-        <h2>Sujitha</h2>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Sujitha Pathapati</h2>
 
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="hero">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
 
-        <h1>Sujitha Pathapati</h1>
+            <h1>Hi, I'm <span>Sujitha Pathapati</span></h1>
 
-        <h2><span id="typing"></span></h2>
+            <h3>
+                <span id="typing"></span>
+            </h3>
 
-        <p>
-            Full Stack Developer and AI/ML Enthusiast passionate about
-            building impactful software solutions.
-        </p>
+            <p>
+                Computer Science student passionate about Full Stack Development,
+                AI/ML, and building scalable real-world applications with modern technologies.
+            </p>
 
-        <a href="#projects" class="btn">
-            View Projects
-        </a>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="resume.pdf" download class="btn secondary">
+                    Download Resume
+                </a>
+            </div>
 
-    </section>
+            <div class="social-icons">
+                <a href="https://github.com/sujithapathapati" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
 
-    <section id="about" data-aos="fade-up">
+                <a href="https://linkedin.com/in/sujithapathapati" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
 
-        <h2>About Me</h2>
-
-        <p>
-            Computer Science Engineering student at
-            Vignan's Institute of Engineering for Women with a CGPA of 9.42.
-
-            Skilled in Java, Python, Full Stack Development,
-            Machine Learning, and modern web technologies.
-        </p>
-
-    </section>
-
-    <section id="skills" data-aos="fade-up">
-
-        <h2>Skills</h2>
-
-        <div class="skills">
-
-            <div>Java</div>
-            <div>Python</div>
-            <div>SQL</div>
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>JavaScript</div>
-            <div>React.js</div>
-            <div>Node.js</div>
-            <div>Express.js</div>
-            <div>MySQL</div>
-            <div>MongoDB</div>
-            <div>Firebase</div>
-            <div>Machine Learning</div>
-            <div>Git</div>
-            <div>GitHub</div>
+                <a href="mailto:sujithapathapati678@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
 
         </div>
-
     </section>
 
-    <section id="projects" data-aos="fade-up">
+    <!-- About -->
+    <section class="about section" id="about">
+        <h2 class="section-title">About Me</h2>
 
-        <h2>Projects</h2>
+        <div class="glass-card">
+            <p>
+                I am a Computer Science Engineering student with strong interest in
+                Full Stack Development, Software Engineering, and Artificial Intelligence.
+                Skilled in Java, Python, React.js, Node.js, and MySQL with experience
+                in building scalable web applications and AI-driven solutions.
+            </p>
+
+            <div class="about-info">
+                <div>
+                    <strong>Education:</strong> B.Tech CSE
+                </div>
+
+                <div>
+                    <strong>CGPA:</strong> 9.45
+                </div>
+
+                <div>
+                    <strong>Achievement:</strong> GATE 2026 Qualified
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills section" id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">Java</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">C</div>
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">React.js</div>
+            <div class="skill-card">Node.js</div>
+            <div class="skill-card">Express.js</div>
+            <div class="skill-card">MySQL</div>
+            <div class="skill-card">Firebase</div>
+            <div class="skill-card">Machine Learning</div>
+            <div class="skill-card">GitHub</div>
+
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects section" id="projects">
+        <h2 class="section-title">Projects</h2>
 
         <div class="project-container">
 
-            <div class="card">
-                <h3>AP ICET Mock Test Platform</h3>
+            <!-- Project 1 -->
+            <div class="project-card">
+                <h3>ShePath Website</h3>
 
                 <p>
-                    Web-based mock examination platform with automated
-                    scoring and student performance analysis.
+                    Women employment platform connecting users with nearby job opportunities
+                    and skill training programs using real-time updates.
                 </p>
 
-                <a href="https://github.com/sujithapathapati/APICET-MOCKTEST"
-                    target="_blank">
+                <div class="tags">
+                    <span>React.js</span>
+                    <span>Node.js</span>
+                    <span>Firebase</span>
+                </div>
+
+                <a href="https://github.com/sujithapathapati/SheRise" target="_blank">
                     GitHub
                 </a>
             </div>
 
-            <div class="card">
-                <h3>ShePath</h3>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <h3>AP ICET Mock Test</h3>
 
                 <p>
-                    Women employment platform connecting users
-                    with jobs and skill development opportunities.
+                    Web-based platform developed for conducting AP ICET mock tests
+                    with timer, automated scoring, and student login system.
                 </p>
 
-                <a href="https://github.com/sujithapathapati/ShePath"
-                    target="_blank">
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>Node.js</span>
+                    <span>MySQL</span>
+                </div>
+
+                <a href="https://github.com/sujithapathapati/APICET-MOCKTEST" target="_blank">
                     GitHub
                 </a>
             </div>
 
-            <div class="card">
+            <!-- Project 3 -->
+            <div class="project-card">
                 <h3>General Health Prediction</h3>
 
                 <p>
-                    Machine learning based healthcare prediction system
-                    using cardiovascular datasets.
+                    AI-based health prediction system using cardiovascular data
+                    with ~85% prediction accuracy.
                 </p>
 
-                <a href="https://github.com/sujithapathapati/General-health-prediction"
-                    target="_blank">
+                <div class="tags">
+                    <span>Python</span>
+                    <span>ML</span>
+                    <span>Scikit-learn</span>
+                </div>
+
+                <a href="https://github.com/sujithapathapati/General-health-prediction" target="_blank">
                     GitHub
                 </a>
             </div>
 
         </div>
-
     </section>
 
-    <section id="experience" data-aos="fade-up">
-
-        <h2>Experience</h2>
+    <!-- Experience -->
+    <section class="experience section" id="experience">
+        <h2 class="section-title">Experience</h2>
 
         <div class="timeline">
 
             <div class="timeline-item">
-                <h3>AI & ML Intern - DataValley</h3>
-                <p>May 2025 - Jul 2025</p>
+                <h3>AI & ML Intern — DataValley</h3>
+                <p>May 2025 – Jul 2025</p>
             </div>
 
             <div class="timeline-item">
-                <h3>AI & ML Intern - Elewayte</h3>
-                <p>Dec 2024 - Jan 2025</p>
+                <h3>AI & ML Intern — Elewayte</h3>
+                <p>Dec 2024 – Jan 2025</p>
             </div>
 
         </div>
-
     </section>
 
-    <section id="achievements" data-aos="fade-up">
-
-        <h2>Achievements</h2>
+    <!-- Achievements -->
+    <section class="achievements section" id="achievements">
+        <h2 class="section-title">Achievements</h2>
 
         <div class="achievement-container">
 
             <div class="achievement-card">
-                🏆 GATE 2026 Qualified
+                GATE 2026 Qualified
             </div>
 
             <div class="achievement-card">
-                🥇 Gold Elite Certification in Java
+                Java Elite Top 1%
             </div>
 
             <div class="achievement-card">
-                💡 Hackathon Winner
+                Hackathon Winner
             </div>
 
             <div class="achievement-card">
-                🎯 Academic Top Performer
+                Quiz Competition Selection
             </div>
 
         </div>
-
     </section>
 
-    <section id="contact" data-aos="fade-up">
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+        <h2 class="section-title">Contact Me</h2>
 
-        <h2>Let's Connect</h2>
-
-        <div class="socials">
-
-            <a href="mailto:sujithapathapati678@gmail.com">
+        <div class="contact-box">
+            <p>
                 <i class="fas fa-envelope"></i>
-            </a>
+                sujithapathapati678@gmail.com
+            </p>
 
-            <a href="https://github.com/sujithapathapati" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-
-            <a href="https://linkedin.com/in/sujithapathapati" target="_blank">
+            <p>
                 <i class="fab fa-linkedin"></i>
-            </a>
+                linkedin.com/in/sujithapathapati
+            </p>
 
+            <p>
+                <i class="fab fa-github"></i>
+                github.com/sujithapathapati
+            </p>
         </div>
-
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
     <script src="script.js"></script>
 
 </body>
-
 </html>
